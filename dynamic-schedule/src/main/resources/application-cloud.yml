@@ -1,0 +1,16 @@
+server:
+  port: 26001
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+task-schedule:
+  cronExpression: "-"
+  fixedDelay: "15"
+
+control:
+  cron-task-enabled: true
+  fixed-delay-task-enabled: false
